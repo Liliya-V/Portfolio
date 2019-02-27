@@ -33,13 +33,19 @@ nav {
 }
 nav a {
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 2vh;
     color: black;
     float: right;
     margin: 14px;
 }
 a:hover {
     color: cornflowerblue;
+}
+@media only all and (max-width: 600px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .homecenter {
@@ -86,7 +92,7 @@ h2 {
     display:flex;
     flex-direction: column;
 
-    font-size: 2rem;
+    font-size: 5vh;
     position: absolute;
     bottom: 10px;
     left: 3%;
