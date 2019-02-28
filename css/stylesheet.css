@@ -114,9 +114,11 @@ h2 {
 .social a:hover {
     color: #adddef;
 }
+
 .aboutme-arrows {
     opacity: 0.5;
 }
+
 h3 {
     color: #404040;
     font-family: "NoeText", sans-serif;
@@ -141,15 +143,9 @@ h4 {
 
 .aboutme-hometop {
     background-color: #adddef;
-    height: 50vh;
-    width: 100vw;
-    position: relative;
-    border-top: 2px solid #f2f2f2;
-    border-left: 2px solid #f2f2f2;
-    border-right: 2px solid #f2f2f2;
 }
 
-.aboutme-hometop nav a:hover {
+.aboutme-hometop a:hover {
     color: #F8D5E2;
 }
 
@@ -159,15 +155,6 @@ h4 {
 
 .aboutme-social a:hover {
     color: #F8D5E2;
-}
-
-.aboutme-social {
-    display:flex;
-    flex-direction: column;
-    font-size: 5vh;
-    position: absolute;
-    bottom: 10px;
-    left: 3%;
 }
 
 .aboutme-mypicture {
