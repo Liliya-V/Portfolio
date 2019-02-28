@@ -37,10 +37,10 @@ nav {
     padding: 0;
 }
 
-/*.mypicture:hover {*/
-/*width: 200px;*/
-/*height: 200px;*/
-/*}*/
+.mypicture:hover {
+width: 200px;
+height: 200px;
+}
 
 nav a {
     text-decoration: none;
