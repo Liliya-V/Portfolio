@@ -37,6 +37,11 @@ nav {
     padding: 0;
 }
 
+.mypicture:hover {
+    width: 200px;
+    height: 200px;
+}
+
 nav a {
     text-decoration: none;
     font-size: 2vh;
@@ -155,4 +160,82 @@ h4 {
 .aboutme-mypicture {
     border: 2px solid #F8D5E2;
 }
+
+.contacts-hometop {
+    background-color: #cee4c7;
+}
+
+.contacts-social a {
+    color: #cee4c7;
+}
+
+.contacts-social a:hover {
+    color: #F8D5E2;
+}
+
+.contacts-hometop nav a:hover {
+    color: #F8D5E2;
+}
+
+.contacts {
+    width: 30%;
+    overflow: auto;
+    position: absolute;
+    top: 34%;
+    left: 35%;
+}
+
+span {
+    font-size: 3vh;
+    font-weight: bold;
+    color: #cee4c7;
+    background-color: #404040;
+    border-radius: 25%;
+    position: relative;
+    z-index: 8;
+}
+
+span:hover {
+    background-color: #F8D5E2;
+    color: #404040;
+}
+
+.works {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+}
+
+.demo {
+    width: 30%;
+    float: left;
+    padding: 20px;
+    border-radius: 40%;
+}
+
+.portfolio-hometop {
+    background-color: #f0d8b9;
+}
+.portfolio-social a {
+    color: #f0d8b9;
+}
+
+.portfolio-social a:hover {
+        color: #cee4c7;
+}
+
+.portfolio-picture {
+    border: 2px solid #cee4c7;
+}
+
+.portfolio-hometop nav a:hover {
+    color: #cee4c7;
+}
+
+
+
+
+
 
