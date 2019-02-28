@@ -24,6 +24,8 @@ body {
 nav {
     width: 98%;
     padding: 10px;
+    position: relative;
+    z-index: 10;
 }
 
 .mypicture {
@@ -38,7 +40,7 @@ nav {
 nav a {
     text-decoration: none;
     font-size: 2vh;
-    color: black;
+    color: #404040;
     float: right;
     margin: 14px;
 }
@@ -106,5 +108,51 @@ h2 {
 
 .social a:hover {
     color: #adddef;
+}
+
+.aboutme-arrows {
+    opacity: 0.5;
+}
+
+h3 {
+    color: #404040;
+    font-family: "NoeText", sans-serif;
+    font-size: 4vh;
+    z-index: 3;
+}
+
+h4 {
+    color: #404040;
+    font-family: "NoeText", sans-serif;
+    font-size: 2.5vh;
+    z-index: 3;
+}
+
+.aboutme {
+    width: 30%;
+    overflow: auto;
+    position: absolute;
+    top: 60%;
+    left: 35%;
+}
+
+.aboutme-hometop {
+    background-color: #adddef;
+}
+
+.aboutme-hometop a:hover {
+    color: #F8D5E2;
+}
+
+.aboutme-social a {
+    color: #adddef;
+}
+
+.aboutme-social a:hover {
+    color: #F8D5E2;
+}
+
+.aboutme-mypicture {
+    border: 2px solid #F8D5E2;
 }
 
