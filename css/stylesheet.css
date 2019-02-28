@@ -126,19 +126,18 @@ h3 {
     z-index: 3;
 }
 
-h4 {
+p {
     color: #404040;
     font-family: "NoeText", sans-serif;
+    font-weight: bold;
     font-size: 2.5vh;
     z-index: 3;
 }
 
 .aboutme {
-    width: 30%;
+    width: 30vw;
+    margin: 0 auto;
     overflow: auto;
-    position: absolute;
-    top: 60%;
-    left: 35%;
 }
 
 .aboutme-hometop {
@@ -179,7 +178,6 @@ h4 {
 
 .contacts {
     width: 30%;
-    overflow: auto;
     position: absolute;
     top: 34%;
     left: 35%;
