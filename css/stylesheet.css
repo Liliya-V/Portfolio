@@ -108,7 +108,6 @@ h2 {
     color: #adddef;
 }
 .aboutme-arrows {
-    /*margin: auto auto;*/
     width: 60%;
     height: 90%;
     position: absolute;
@@ -120,26 +119,17 @@ h3 {
     font-family: "NoeText", sans-serif;
     font-size: 4vh;
     z-index: 3;
-    /*position: absolute;*/
-    /*bottom: 15px;*/
-    /*left: 25%;*/
-    /*margin: 0;*/
-
 }
+
 h4 {
     color: #404040;
     font-family: "NoeText", sans-serif;
     font-size: 2.5vh;
     z-index: 3;
-    /*position: absolute;*/
-    /*bottom: -60px;*/
-    /*left: 25%;*/
-    /*margin: 0;*/
 }
 
 .aboutme {
     width: 30%;
-    /*margin: 0 auto;*/
     overflow: auto;
     position: absolute;
     top: 60%;
@@ -185,4 +175,52 @@ h4 {
     margin: 0;
     padding: 0;
 }
+
+.contacts-hometop {
+    background-color: #cee4c7;
+    height: 50vh;
+    width: 100vw;
+    position:relative;
+    border-top: 2px solid #f2f2f2;
+    border-left: 2px solid #f2f2f2;
+    border-right: 2px solid #f2f2f2;
+}
+
+.contacts-social {
+    display: flex;
+    flex-direction: column;
+    font-size: 5vh;
+    position: absolute;
+    bottom: 10px;
+    left: 3%;
+}
+
+.contacts-social a {
+    color: #cee4c7;
+}
+
+.contacts-social a:hover {
+    color: #F8D5E2;
+}
+
+.contacts-hometop nav a:hover {
+    color: #F8D5E2;
+}
+
+.contacts {
+    width: 30%;
+    overflow: auto;
+    position: absolute;
+    top: 34%;
+    left: 35%;
+}
+
+span {
+    font-size: 3vh;
+    font-weight: bold;
+    color: #cee4c7;
+    background-color: #404040;
+    border-radius: 25%;
+}
+
 
