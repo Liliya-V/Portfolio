@@ -135,8 +135,10 @@ p {
 }
 
 .aboutme {
-    width: 30vw;
-    margin: 0 auto;
+    width: 22vw;
+    position: absolute;
+    left: 36%;
+    top: 57%;
     overflow: auto;
 }
 
@@ -228,6 +230,13 @@ span:hover {
 
 .portfolio-hometop nav a:hover {
     color: #cee4c7;
+}
+
+p ~ .stophere {
+    color: #adddef;
+    background-color: #404040;
+    border-radius: 15px;
+    text-align: center;
 }
 
 
