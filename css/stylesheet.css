@@ -178,9 +178,7 @@ p {
 
 .contacts {
     width: 30%;
-    position: absolute;
-    top: 34%;
-    left: 35%;
+    margin: 0 auto;
 }
 
 span {
