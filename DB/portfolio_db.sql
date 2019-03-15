@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.6.43)
 # Database: PortfolioProjects
-# Generation Time: 2019-03-15 15:35:21 +0000
+# Generation Time: 2019-03-15 16:09:57 +0000
 # ************************************************************
 
 
@@ -27,9 +27,9 @@ DROP TABLE IF EXISTS `Projects`;
 
 CREATE TABLE `Projects` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `title` varchar(255) DEFAULT '',
-  `link` varchar(255) DEFAULT '',
-  `image` varchar(255) DEFAULT '',
+  `title` varchar(255) NOT NULL DEFAULT '',
+  `link` varchar(255) NOT NULL DEFAULT '',
+  `image` varchar(255) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -39,8 +39,8 @@ LOCK TABLES `Projects` WRITE;
 INSERT INTO `Projects` (`id`, `title`, `link`, `image`)
 VALUES
 	(1,'Portfolio','www.liliya.dev','file:///sites/academy-php7/html/Portfolio/images/lamp3.png'),
-	(2,'Project2',NULL,'file:///sites/academy-php7/html/Portfolio/images/lamp2.png'),
-	(3,'Project3',NULL,'file:///sites/academy-php7/html/Portfolio/images/lamp1.png');
+	(5,'Project3','https://dev.maydenacademy.co.uk/students/2019/feb/liliia/Portfolio/portfolio.html','file:///sites/academy-php7/html/Portfolio/images/lamp1.png'),
+	(6,'Project2','https://dev.maydenacademy.co.uk/students/2019/feb/liliia/Portfolio/portfolio.html','file:///sites/academy-php7/html/Portfolio/images/lamp1.png');
 
 /*!40000 ALTER TABLE `Projects` ENABLE KEYS */;
 UNLOCK TABLES;
