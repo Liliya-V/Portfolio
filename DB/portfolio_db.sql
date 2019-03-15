@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.6.43)
 # Database: PortfolioProjects
-# Generation Time: 2019-03-15 16:09:57 +0000
+# Generation Time: 2019-03-15 16:21:19 +0000
 # ************************************************************
 
 
@@ -20,12 +20,12 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 
-# Dump of table Projects
+# Dump of table projects
 # ------------------------------------------------------------
 
-DROP TABLE IF EXISTS `Projects`;
+DROP TABLE IF EXISTS `projects`;
 
-CREATE TABLE `Projects` (
+CREATE TABLE `projects` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `title` varchar(255) NOT NULL DEFAULT '',
   `link` varchar(255) NOT NULL DEFAULT '',
@@ -33,16 +33,16 @@ CREATE TABLE `Projects` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-LOCK TABLES `Projects` WRITE;
-/*!40000 ALTER TABLE `Projects` DISABLE KEYS */;
+LOCK TABLES `projects` WRITE;
+/*!40000 ALTER TABLE `projects` DISABLE KEYS */;
 
-INSERT INTO `Projects` (`id`, `title`, `link`, `image`)
+INSERT INTO `projects` (`id`, `title`, `link`, `image`)
 VALUES
-	(1,'Portfolio','www.liliya.dev','file:///sites/academy-php7/html/Portfolio/images/lamp3.png'),
-	(5,'Project3','https://dev.maydenacademy.co.uk/students/2019/feb/liliia/Portfolio/portfolio.html','file:///sites/academy-php7/html/Portfolio/images/lamp1.png'),
-	(6,'Project2','https://dev.maydenacademy.co.uk/students/2019/feb/liliia/Portfolio/portfolio.html','file:///sites/academy-php7/html/Portfolio/images/lamp1.png');
+	(1,'Portfolio','https://dev.maydenacademy.co.uk/students/2019/feb/liliia/Portfolio/portfolio.html','file:///sites/academy-php7/html/Portfolio/images/lamp1.png'),
+	(2,'Project2','https://dev.maydenacademy.co.uk/students/2019/feb/liliia/Portfolio/portfolio.html','file:///sites/academy-php7/html/Portfolio/images/lamp1.png'),
+	(3,'Project3','https://dev.maydenacademy.co.uk/students/2019/feb/liliia/Portfolio/portfolio.html','file:///sites/academy-php7/html/Portfolio/images/lamp1.png');
 
-/*!40000 ALTER TABLE `Projects` ENABLE KEYS */;
+/*!40000 ALTER TABLE `projects` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
