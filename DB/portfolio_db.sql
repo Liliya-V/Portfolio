@@ -38,9 +38,9 @@ LOCK TABLES `projects` WRITE;
 
 INSERT INTO `projects` (`id`, `title`, `link`, `image`)
 VALUES
-	(1,'Portfolio','https://dev.maydenacademy.co.uk/students/2019/feb/liliia/Portfolio/portfolio.html','file:///sites/academy-php7/html/Portfolio/images/lamp1.png'),
-	(2,'Project2','https://dev.maydenacademy.co.uk/students/2019/feb/liliia/Portfolio/portfolio.html','file:///sites/academy-php7/html/Portfolio/images/lamp1.png'),
-	(3,'Project3','https://dev.maydenacademy.co.uk/students/2019/feb/liliia/Portfolio/portfolio.html','file:///sites/academy-php7/html/Portfolio/images/lamp1.png');
+	(1,'Portfolio','https://dev.maydenacademy.co.uk/students/2019/feb/liliia/Portfolio/portfolio.php','file:///sites/academy-php7/html/Portfolio/images/lamp1.png'),
+	(2,'Project2','https://dev.maydenacademy.co.uk/students/2019/feb/liliia/Portfolio/portfolio.php','file:///sites/academy-php7/html/Portfolio/images/lamp1.png'),
+	(3,'Project3','https://dev.maydenacademy.co.uk/students/2019/feb/liliia/Portfolio/portfolio.php','file:///sites/academy-php7/html/Portfolio/images/lamp1.png');
 
 /*!40000 ALTER TABLE `projects` ENABLE KEYS */;
 UNLOCK TABLES;
