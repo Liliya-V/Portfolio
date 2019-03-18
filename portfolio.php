@@ -1,4 +1,12 @@
-<!DOCTYPE html>
+<?php
+
+$db = new PDO("mysql:host=192.168.20.20;dbname=Exercise2", 'root', '');
+$db -> setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+
+
+?>
+
+
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -9,24 +17,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div class="hometop">
+        <div class="hometop portfolio-hometop">
             <nav>
-                <img class="mypicture" src="images/IMG_8373.JPG" alt="Liliya">
+                <img class="mypicture portfolio-picture" src="images/IMG_8373.JPG" alt="Liliya">
                 <a href="contacts.html">Contacts</a>
                 <a href="portfolio.php">Portfolio</a>
                 <a href="aboutme.html">About me</a>
                 <a href="index.html">Home</a>
             </nav>
-            <h1>
-                Hello, stranger :)
-            </h1>
-            <h2>
-                I am Liliya Voevodina
-            </h2>
+            <div class="works">
+                <h3>
+                    Let me please introduce you my works.
+                </h3>
+                    <img class="demo" src="images/lamp1.png" alt="lamps">
+                    <img class="demo" src="images/lamp2.png" alt="lamps">
+                    <img class="demo" src="images/lamp3.png" alt="lamps">
+            </div>
         </div>
         <div class="homecenter">
-            <img class="arrows" src="images/arrow-img.png" alt="Arrows">
-            <div class="social">
+            <img class="arrows aboutme-arrows" src="images/arrow-img.png" alt="Arrows">
+            <div class="social contacts-social portfolio-social">
                 <a href="https://www.facebook.com/lilkalolkaN1"><i class="fa fa-facebook-square"></i></a>
                 <a href="https://github.com/Liliya-V"><i class="fa fa-github-square"></i></a>
                 <a href="https://www.linkedin.com/feed/"><i class="fa fa-linkedin-square"></i></a>
@@ -34,3 +44,5 @@
         </div>
     </body>
 </html>
+
+
