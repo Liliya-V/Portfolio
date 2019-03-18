@@ -1,12 +1,10 @@
 <?php
-
-$db = new PDO("mysql:host=192.168.20.20;dbname=Exercise2", 'root', '');
+$db = new PDO("mysql:host=192.168.20.20;dbname=PortfolioProjects", 'root', '');
 $db -> setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-
-
+$sql="SELECT `title`,`image`,`link` FROM `projects`;";
+$query = $db->query($sql);
+$projects = $query->fetchAll();
 ?>
-
-
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -26,16 +24,23 @@ $db -> setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
                 <a href="index.html">Home</a>
             </nav>
             <div class="works">
-                <h3>
-                    Let me please introduce you my works.
-                </h3>
-                    <img class="demo" src="images/lamp1.png" alt="lamps">
-                    <img class="demo" src="images/lamp2.png" alt="lamps">
-                    <img class="demo" src="images/lamp3.png" alt="lamps">
+                <h3>My projects:</h3>
+                <?php
+
+                   if (empty($projects)) {
+                       echo 'There are no projects yet';
+                   } else {
+                       foreach ($projects as $project) {
+                           echo '<div class="project">
+                                <a href="' . $project['link'] . '"><img class="demo" src="'. $project['image'] . '" alt="lamp"></a>
+                                <h5>'.$project['title'].'</h5>
+                             </div>';
+                       }
+                   }
+                ?>
             </div>
         </div>
         <div class="homecenter">
-            <img class="arrows aboutme-arrows" src="images/arrow-img.png" alt="Arrows">
             <div class="social contacts-social portfolio-social">
                 <a href="https://www.facebook.com/lilkalolkaN1"><i class="fa fa-facebook-square"></i></a>
                 <a href="https://github.com/Liliya-V"><i class="fa fa-github-square"></i></a>
