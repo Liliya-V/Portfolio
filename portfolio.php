@@ -1,14 +1,10 @@
 <?php
 $db = new PDO("mysql:host=192.168.20.20;dbname=PortfolioProjects", 'root', '');
 $db -> setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-
-
 $sql="SELECT `title`,`image`,`link` FROM `projects`;";
 $query = $db->query($sql);
 $projects = $query->fetchAll();
 ?>
-
-
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -29,7 +25,7 @@ $projects = $query->fetchAll();
             </nav>
             <div class="works">
                 <?php
-                echo '<h3>' . 'My projects:' . '</h3>';
+                echo '<h3>My projects:</h3>';
                 foreach ($projects as $project) {
                         echo '<div class="project">
                                 <a href="' . $project['link'] . '"><img class="demo" src="'. $project['image'] . '" alt="lamp"></a>
@@ -40,7 +36,6 @@ $projects = $query->fetchAll();
             </div>
         </div>
         <div class="homecenter">
-<!--            <img class="arrows aboutme-arrows" src="images/arrow-img.png" alt="Arrows">-->
             <div class="social contacts-social portfolio-social">
                 <a href="https://www.facebook.com/lilkalolkaN1"><i class="fa fa-facebook-square"></i></a>
                 <a href="https://github.com/Liliya-V"><i class="fa fa-github-square"></i></a>
