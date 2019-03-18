@@ -24,13 +24,18 @@ $projects = $query->fetchAll();
                 <a href="index.html">Home</a>
             </nav>
             <div class="works">
+                <h3>My projects:</h3>
                 <?php
-                echo '<h3>My projects:</h3>';
-                foreach ($projects as $project) {
+
+                   if (empty($projects)) {
+                       echo 'There are no projects yet';
+                       } else {
+                       foreach ($projects as $project) {
                         echo '<div class="project">
                                 <a href="' . $project['link'] . '"><img class="demo" src="'. $project['image'] . '" alt="lamp"></a>
                                 <h5>'.$project['title'].'</h5>
                              </div>';
+                    }
                 }
                 ?>
             </div>
