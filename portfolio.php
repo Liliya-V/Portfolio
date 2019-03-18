@@ -29,14 +29,14 @@ $projects = $query->fetchAll();
 
                    if (empty($projects)) {
                        echo 'There are no projects yet';
-                       } else {
+                   } else {
                        foreach ($projects as $project) {
-                        echo '<div class="project">
+                           echo '<div class="project">
                                 <a href="' . $project['link'] . '"><img class="demo" src="'. $project['image'] . '" alt="lamp"></a>
                                 <h5>'.$project['title'].'</h5>
                              </div>';
-                    }
-                }
+                       }
+                   }
                 ?>
             </div>
         </div>
