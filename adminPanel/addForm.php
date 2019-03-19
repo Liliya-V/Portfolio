@@ -16,11 +16,11 @@ $db -> setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
         <form  action="addformDB.php" method="POST">
             <div class="container">
                <label for="title">Type a title here:</label>
-               <input class="addform" type="text" name="title">
+               <input class="addform" type="text" name="title" required>
                <label for="link">insert a project link:</label>
-               <input class="addform" type="url" name="link">
+               <input class="addform" type="url" name="link" required>
                <label for="image">Choose an image:</label>
-               <input class="addform" type="file" name="image">
+               <input class="addform" type="file" name="image" required>
             </div>
             <input type="submit" value="Add a project">
         </form>
