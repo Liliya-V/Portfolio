@@ -1,0 +1,49 @@
+*{
+    box-sizing:border-box;
+}
+
+body {
+    text-align: center;
+}
+
+h1 {
+    color: #adddef;
+}
+
+table {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.addbutton {
+    margin-bottom: 30px;
+}
+
+a {
+    text-decoration: none;
+    background-color: #adddef;
+    border-radius: 20% ;
+    color: #000;
+}
+
+a:hover {
+    background-color: #F8D5E2;
+}
+
+.deletebutton {
+    background-color: #FA8072;
+}
+
+.editbutton {
+    padding: 1px 17px 1px 17px;
+}
+
+input {
+    background-color: #adddef;
+    border-radius: 20% ;
+}
+
+input:hover {
+    background-color: #F8D5E2;
+}
