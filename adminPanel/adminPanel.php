@@ -1,7 +1,7 @@
 <?php
 $db = new PDO("mysql:host=192.168.20.20;dbname=PortfolioProjects", 'root', '');
-$db -> setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-$sql="SELECT `title` FROM `projects`;";
+$db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+$sql = "SELECT `title` FROM `projects`;";
 $query = $db->query($sql);
 $titles = $query->fetchAll();
 ?>
@@ -17,7 +17,7 @@ $titles = $query->fetchAll();
  <body>
     <h1>Projects management panel</h1>
       <?php
-        echo '<h3 class="addbutton"><a href="#">Add new projet</a></h3>';
+        echo '<h3 class="addbutton"><a href="#">Add new project</a></h3>';
         echo '<table border=3>
         <tr>
             <th>TITLE</th>
