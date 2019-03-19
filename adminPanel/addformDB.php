@@ -12,14 +12,12 @@ $image = 'images/' . $_POST['image'];
 $sqlProjects = "INSERT INTO `projects` (`title`, `link`, `image`) VALUES (:title, :link, :image);";
 $queryProjects= $db->prepare($sqlProjects);
 $addProject = $queryProjects->execute([':title'=>$title, ':link'=>$link, ':image'=>$image]);
-
-
 if (!$_POST['title'] || !$_POST['link'] || !$_POST['image']) {
     echo  'Please, check if you filled all three lines';
-    echo'               .        ';
+    echo'.';
     echo '<td><a href="addForm.php">Go back</a></td>';
 } else {
-    echo 'Project was sucsessfully added';}
+    echo 'Project was successfully added';}
 }
 
 
