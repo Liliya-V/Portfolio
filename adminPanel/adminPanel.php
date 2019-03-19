@@ -8,7 +8,7 @@ $titles = $query->fetchAll();
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Portfolio Liliya Voevodina</title>
+        <title>Admin panel</title>
         <link href="../css/normalize.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="../css/styleAdminPanel.css" rel="stylesheet" type="text/css">
