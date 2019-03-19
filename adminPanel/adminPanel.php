@@ -17,18 +17,17 @@ $titles = $query->fetchAll();
  <body>
     <h1>Projects management panel</h1>
       <?php
-        echo '<td><a href="#">Add new projet</a></td>';
-        echo '<br><br>';
+        echo '<h3 class="addbutton"><a href="#">Add new projet</a></h3>';
         echo '<table border=5>
         <tr>
             <th>TITLE</th>
             <th colspan="2">ACTION</th>
         </tr>';
         foreach ($titles as $title) {
-            echo '<tr>';
-            echo '<td>' .$title['title']. '</td>';
-            echo '<td><a href="#">Edit</a></td>';
-            echo '<td><input type="submit" name="delete" value="Delete"></td>';
+            echo '<tr>
+            <td>' .$title['title']. '</td>
+            <td><a href="#">Edit</a></td>
+            <td><input type="submit" name="delete" value="Delete"></td>';
            }
         echo '</table>';
       ?>
