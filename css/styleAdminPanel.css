@@ -30,6 +30,14 @@ a:hover {
     background-color: #F8D5E2;
 }
 
+.deletebutton {
+    background-color: #FA8072;
+}
+
+.editbutton {
+    padding: 1px 17px 1px 17px;
+}
+
 input {
     background-color: #adddef;
     border-radius: 20% ;

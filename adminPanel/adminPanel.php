@@ -18,7 +18,7 @@ $titles = $query->fetchAll();
     <h1>Projects management panel</h1>
       <?php
         echo '<h3 class="addbutton"><a href="#">Add new projet</a></h3>';
-        echo '<table border=5>
+        echo '<table border=3>
         <tr>
             <th>TITLE</th>
             <th colspan="2">ACTION</th>
@@ -26,8 +26,8 @@ $titles = $query->fetchAll();
         foreach ($titles as $title) {
             echo '<tr>
             <td>' .$title['title']. '</td>
-            <td><a href="#">Edit</a></td>
-            <td><input type="submit" name="delete" value="Delete"></td>';
+            <td><a class="editbutton" href="#">Edit</a></td>
+            <td><input class="deletebutton" type="submit" name="delete" value="Delete"></td>';
            }
         echo '</table>';
       ?>
