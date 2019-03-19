@@ -12,7 +12,7 @@ if(!empty($_POST['title'])) {
         $link = filter_var($_POST['link'], FILTER_VALIDATE_URL);
     }
 }
-if ($_POST['title'] || $_POST['link'] || $_POST['image']) {
+if (!empty($_POST['title'])&& !empty($_POST['link'])&& !empty($_POST['image'])) {
     $addProject = $queryProjects->execute([':title'=>$title, ':link'=>$link, ':image'=>$image]);
     echo 'Project was successfully added.  ';
     echo '<br><a href="addForm.php">Add another one. </a><br>';
