@@ -1,6 +1,6 @@
 <?php
 $db = new PDO("mysql:host=192.168.20.20;dbname=PortfolioProjects", 'root', '');
-$db -> setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+$db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 ?>
 <html lang="en">
     <head>
@@ -15,12 +15,12 @@ $db -> setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
         <h1>Welcome to a project adding page, Liliya</h1>
         <form  action="addformDB.php" method="POST">
             <div class="container">
-               <label for="title">Type a title here:</label>
-               <input class="addform" type="text" name="title">
-               <label for="link">insert a project link:</label>
-               <input class="addform" type="url" name="link">
-               <label for="image">Choose an image:</label>
-               <input class="addform" type="file" name="image">
+               <label>Type a title here:</label>
+               <input class="addform" type="text" name="title" required>
+               <label>insert a project link:</label>
+               <input class="addform" type="url" name="link" required>
+               <label>Choose an image:</label>
+               <input class="addform" type="file" name="image" required>
             </div>
             <input type="submit" value="Add a project">
         </form>

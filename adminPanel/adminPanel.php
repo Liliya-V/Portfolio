@@ -17,7 +17,7 @@ $titles = $query->fetchAll();
  <body>
     <h1>Projects management panel</h1>
       <?php
-        echo '<h3 class="addbutton"><a href="#">Add new project</a></h3>';
+        echo '<h3 class="addbutton"><a class="addbutton" href="addForm.php">Add new project</a></h3>';
         echo '<table border=3>
         <tr>
             <th>TITLE</th>
