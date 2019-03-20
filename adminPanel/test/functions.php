@@ -14,7 +14,7 @@ class test extends TestCase
         $this->assertTrue($result);
     }
 
-    public function testvalidateProject_failure()
+    public function testvalidateProject_failure_when_title_is_empty()
     {
         $postdata = ['title' => '', 'link' => 'link', 'image' => 'image'];
         $result = validateProject($postdata);
