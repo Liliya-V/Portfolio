@@ -18,7 +18,7 @@ $project = $query->fetch();
     </head>
     <body>
         <h1>Welcome to a project editing page, Liliya</h1>
-        <form  action="editformDB.php" method="POST">
+        <form  action="editformdb.php" method="POST">
             <div class="container">
                 <?php
                     echo '<label for="title" > Type a title here:</label >';
