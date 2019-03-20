@@ -51,7 +51,7 @@ class test extends TestCase
         $data = ['title' => 'logo', 'link' => 'link', 'image' => 'image'];
         $result = setVariables($data);
         $this->assertInternalType('string', $result[':title']);
-        $this->assertInternalType('bool', $result[':link']);
+        $this->assertInternalType('string', $result[':link']);
         $this->assertInternalType('string', $result[':image']);
     }
 
@@ -64,9 +64,9 @@ class test extends TestCase
 
     public function testsetVariables_validateLink()
     {
-        $data = ['title' => 'logo', 'link' => 'https://www.lil-/iya.dev', 'image' => 'image'];
+        $data = ['title' => 'logo', 'link' => 'https://www.lil£iya.dev', 'image' => 'image'];
         $result = setVariables($data);
-        $this->assertFalse($result[':link']);
+        $this->assertEquals('https://www.liliya.dev', $result[':link']);
     }
 
     public function testsetVariables_Image()

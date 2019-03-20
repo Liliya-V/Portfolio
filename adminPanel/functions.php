@@ -7,7 +7,7 @@ function validateProject($postData) {
 function setVariables($data) {
     $result = [];
     $result[':title'] = filter_var($data['title'], FILTER_SANITIZE_STRING);
-    $result[':link'] = filter_var($data['link'], FILTER_VALIDATE_URL);
+    $result[':link'] = filter_var($data['link'], FILTER_SANITIZE_URL);
     $result[':image'] = 'images/' . $data['image'];
     return $result;
 }
