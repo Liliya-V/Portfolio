@@ -1,7 +1,7 @@
 <?php
 $db = new PDO("mysql:host=192.168.20.20;dbname=PortfolioProjects", 'root', '');
 $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-$sql = "SELECT `title` FROM `projects`;";
+$sql = "SELECT `id`,`title` FROM `projects`;";
 $query = $db->query($sql);
 $titles = $query->fetchAll();
 ?>
@@ -26,7 +26,7 @@ $titles = $query->fetchAll();
         foreach ($titles as $title) {
             echo '<tr>
             <td>' .$title['title']. '</td>
-            <td><a class="editbutton" href="#">Edit</a></td>
+            <td><a class="editbutton" href="editform.php?id=' . $title['id'] . '">Edit</a></td>
             <td><input class="deletebutton" type="submit" name="delete" value="Delete"></td>';
            }
         echo '</table>';

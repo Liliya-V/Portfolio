@@ -1,6 +1,11 @@
 <?php
 $db = new PDO("mysql:host=192.168.20.20;dbname=PortfolioProjects", 'root', '');
 $db -> setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+$sql = "SELECT `title`, `link`, `image` FROM `projects` WHERE `id` = :id;";
+$id = $_GET['id'];
+$query = $db->prepare($sql);
+$query -> execute([':id'=>$id]);
+$project = $query->fetch();
 ?>
 <html lang="en">
     <head>
@@ -13,16 +18,18 @@ $db -> setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
     </head>
     <body>
         <h1>Welcome to a project editing page, Liliya</h1>
-        <form  action="addformDB.php" method="POST">
+        <form  action="editformDB.php" method="POST">
             <div class="container">
-                <label for="title">Type a title here:</label>
-                <input class="addform" type="text" name="title">
-                <label for="link">insert a project link:</label>
-                <input class="addform" type="url" name="link">
-                <label for="image">Choose an image:</label>
-                <input class="addform" type="file" name="image">
+                <?php
+                    echo '<label for="title" > Type a title here:</label >';
+                    echo'<input class="addform" type = "text" name = "title" value="'.htmlspecialchars($project['title']).'" >';
+                    echo '<label for="link" > insert a project link:</label >';
+                    echo '<input class="addform" type = "url" name = "link" value="'.htmlspecialchars($project['link']).'" >';
+                    echo '<label for="image" > Choose an image:</label >';
+                    echo '<input class="addform" type = "text" name = "image" value="'.htmlspecialchars($project['image']).'">';
+                ?>
             </div>
-            <input type="submit" value="Add a project">
+            <input type="submit" value="Edit a project">
         </form>
     </body>
 </html>
