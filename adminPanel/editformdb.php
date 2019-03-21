@@ -12,11 +12,15 @@ if (validateProject($_POST)) {
     $data = setVariables($_POST);
     $data[':id'] = $id;
     $editProject = $queryProjects->execute($data);
-        if (!$editProject) {
-            echo 'Ooops, something went wrong';
-            echo '<br><a href="editform.php">Try again</a><br>';
-        } else {
-            echo 'Project was successfully edited.';
-            echo '<a href="../portfolio.php">Go to your portfolio. </a>';
-        }
-}
+    if (!$editProject) {
+        echo 'Hmmmm, i think you need to';
+        echo '<br><a href="editform.php">Try again</a><br>';
+        echo ', because something went wrong';
+    } else {
+        echo 'Project was successfully edited.';
+        echo '<a href="../portfolio.php">Go to your portfolio. </a>';
+    }
+} else {
+        echo 'Something went wrong....dont\' cry, just ';
+        echo '<br><a href="editform.php">Try again</a><br>';
+    }
