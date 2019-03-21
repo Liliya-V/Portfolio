@@ -50,6 +50,13 @@ nav a {
     margin: 14px;
 }
 
+.login:hover {
+    padding: 10px 0px 10px 0px;
+    color: #404040;
+    border-radius: 50%;
+    background-color: #adddef;
+}
+
 nav a:hover {
     color: #adddef;
 }

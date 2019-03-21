@@ -1,4 +1,9 @@
 <?php
+session_start();
+if  (empty $_SESSION['loggedin']) ||
+     $_SESSION['loggedin']!=true) {
+    header('location:loginform.php');
+}
 $db = new PDO("mysql:host=192.168.20.20;dbname=PortfolioProjects", 'root', '');
 $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 $sql = "SELECT `id`,`title` FROM `projects`;";
