@@ -43,6 +43,7 @@ nav {
 }
 
 nav a {
+    padding: 10px 0px 10px 0px;
     text-decoration: none;
     font-size: 2vh;
     color: #404040;
@@ -50,15 +51,19 @@ nav a {
     margin: 14px;
 }
 
-.login:hover {
+.login {
     padding: 10px 0px 10px 0px;
+}
+
+.login:hover {
     color: #404040;
     border-radius: 50%;
-    background-color: #adddef;
+    border: 2px solid #adddef;
 }
 
 nav a:hover {
     color: #adddef;
+
 }
 
 @media only all and (max-width: 600px) {
