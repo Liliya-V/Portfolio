@@ -16,11 +16,3 @@ if (validateProject($_POST)) {
     echo 'Please fill all lines';
     echo '<br><a href="editform.php">Try again</a><br>';
 }
-
-
-
-
-
-
-
-
