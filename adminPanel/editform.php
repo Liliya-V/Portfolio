@@ -4,10 +4,12 @@ $db -> setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 $sql = "SELECT `title`, `link`, `image` FROM `projects` WHERE `id` = :id;";
 if (!empty($_GET['id'])) {
     $id = $_GET['id'];
+    $query = $db->prepare($sql);
+    $query -> execute([':id'=>$id]);
+    $project = $query->fetch();
+} else {
+    header('location:adminPanel.php');
 }
-$query = $db->prepare($sql);
-$query -> execute([':id'=>$id]);
-$project = $query->fetch();
 ?>
 <html lang="en">
     <head>
@@ -20,6 +22,7 @@ $project = $query->fetch();
     </head>
     <body>
         <h1>Welcome to a project editing page, Liliya</h1>
+
         <form  action="editformdb.php?id=<?php echo $id;?>" method="POST">
             <div class="container">
               <label for="title" > Type a title here:</label >

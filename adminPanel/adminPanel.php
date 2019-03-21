@@ -32,9 +32,11 @@ $titles = $query->fetchAll();
             echo '<tr>
             <td>' .$title['title']. '</td>
             <td><a class="editbutton" href="editform.php?id=' . $title['id'] . '">Edit</a></td>
-            <td><input class="deletebutton" type="submit" name="delete" value="Delete"></td>';
+            <td><a class="deletebutton" href="deletebutton.php?id=' . $title['id'] . '">Delete</a></td>';
            }
         echo '</table>';
       ?>
+     <br>
+     <a href="../portfolio.php">Go to portfolio page</a><br>
  </body>
 </html>
