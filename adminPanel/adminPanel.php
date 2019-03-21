@@ -1,7 +1,6 @@
 <?php
 session_start();
-if  (empty($_SESSION['loggedIn']) ||
-     $_SESSION['loggedIn']!=true) {
+if  (empty($_SESSION['loggedIn']) || $_SESSION['loggedIn']!=true) {
     header('location:../index.php');
 }
 $db = new PDO("mysql:host=192.168.20.20;dbname=PortfolioProjects", 'root', '');
