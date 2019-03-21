@@ -31,5 +31,7 @@ $titles = $query->fetchAll();
            }
         echo '</table>';
       ?>
+     <br>
+     <a href="../portfolio.php">Go to portfolio page</a><br>
  </body>
 </html>

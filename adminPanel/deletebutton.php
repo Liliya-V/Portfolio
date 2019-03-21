@@ -10,10 +10,9 @@ if (!empty($_GET['id'])) {
     if (!$deleteproject) {
         echo 'An object was not deleted';
         echo '<br><a href="adminPanel.php">Try again</a><br>';
-    } else {
-        echo 'Project was successfully deleted.';
         echo '<br><a href="../portfolio.php">Go to your portfolio.</a><br>';
-        echo '<a href="adminPanel.php">Go back to admin panel .</a>';
+    } else {
+        header('location:adminPanel.php?objectdeleted');
     }
 } else  {
     echo 'Something went wrong :( ';
