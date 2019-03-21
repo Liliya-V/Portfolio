@@ -18,6 +18,7 @@ $projects = $query->fetchAll();
         <div class="hometop portfolio-hometop">
             <nav>
                 <img class="mypicture portfolio-picture" src="images/IMG_8373.JPG" alt="Liliya">
+                <a class="login" href="adminPanel/loginform.php">Log in</a>
                 <a href="contacts.html">Contacts</a>
                 <a href="portfolio.php">Portfolio</a>
                 <a href="aboutme.html">About me</a>
