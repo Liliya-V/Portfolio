@@ -18,6 +18,7 @@ $project = $query->fetch();
     </head>
     <body>
         <h1>Welcome to a project editing page, Liliya</h1>
+
         <form  action="editformdb.php?id=<?php echo $id;?>" method="POST">
             <div class="container">
                 <?php
