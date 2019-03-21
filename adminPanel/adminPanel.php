@@ -1,6 +1,6 @@
 <?php
 session_start();
-if  (empty $_SESSION['loggedin']) ||
+if  (empty($_SESSION['loggedin']) ||
      $_SESSION['loggedin']!=true) {
     header('location:loginform.php');
 }
