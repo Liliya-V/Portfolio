@@ -4,10 +4,12 @@ $db -> setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 $sql = "SELECT `title`, `link`, `image` FROM `projects` WHERE `id` = :id;";
 if (!empty($_GET['id'])) {
     $id = $_GET['id'];
+    $query = $db->prepare($sql);
+    $query -> execute([':id'=>$id]);
+    $project = $query->fetch();
+} else {
+    header('location:adminPanel.php');
 }
-$query = $db->prepare($sql);
-$query -> execute([':id'=>$id]);
-$project = $query->fetch();
 ?>
 <html lang="en">
     <head>
