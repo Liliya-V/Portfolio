@@ -26,7 +26,7 @@ $project = $query->fetch();
                     echo '<label for="link" > insert a project link:</label >';
                     echo '<input class="addform" type = "url" name = "link" value="'.htmlspecialchars($project['link']).'" >';
                     echo '<label for="image" > Choose an image:</label >';
-                    echo '<input class="addform" type = "text" name = "image" value="'.htmlspecialchars($project['image']).'">';
+                    echo '<input class="addform" type = "text" name = "image" value="'.htmlspecialchars(substr($project['image'],7)).'">';
                 ?>
             </div>
             <input type="submit" value="Edit a project">
