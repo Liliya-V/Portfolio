@@ -6,7 +6,7 @@ if (!empty($_POST['username']) &&
     $username = $_POST['username'];
     $password = $_POST['password'];
     SESSION_START();
-    if ($username == USERNAME &&
+    if ($username === USERNAME &&
         password_verify($password, PASSWORD)) {
         $_SESSION['loggedIn'] = true;
         header('location:adminPanel.php');
