@@ -12,7 +12,7 @@ if (!empty($_GET['id'])) {
         echo '<br><a href="adminPanel.php">Try again</a><br>';
         echo '<br><a href="../portfolio.php">Go to your portfolio.</a><br>';
     } else {
-        header('location:adminPanel.php?objectdeleted');
+        header('location:adminPanel.php');
     }
 } else  {
     echo 'Something went wrong :( ';
