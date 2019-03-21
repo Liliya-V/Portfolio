@@ -11,6 +11,7 @@ if (validateProject($_POST)) {
     echo 'Project was successfully added.';
     echo '<br><a href="addForm.php">Add another one. </a><br>';
     echo '<a href="../portfolio.php">Go to your portfolio. </a>';
+    echo '<br><a href="adminPanel.php">Go back to admin panel. </a>';
 } else {
     echo 'Please fill all lines';
     echo '<br><a href="addForm.php">Try again</a><br>';
