@@ -21,6 +21,6 @@ if (validateProject($_POST)) {
         echo '<a href="../portfolio.php">Go to your portfolio. </a>';
     }
 } else {
-        echo 'Something went wrong....dont\' cry, just ';
-        echo '<br><a href="editform.php">Try again</a><br>';
-    }
+    echo 'Something went wrong....dont\' cry, just ';
+    echo '<br><a href="editform.php">Try again</a><br>';
+}
