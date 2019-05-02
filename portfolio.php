@@ -13,22 +13,25 @@ $projects = $query->fetchAll();
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script defer src="JS/menu.js"></script>
     </head>
     <body>
         <div class="hometop portfolio-hometop">
             <nav>
-                <img class="mypicture portfolio-picture" src="images/IMG_8373.JPG" alt="Liliya">
-                <a class="login" href="adminPanel/loginform.php">Log in</a>
-                <a href="contacts.html">Contacts</a>
-                <a href="portfolio.php">Portfolio</a>
-                <a href="aboutme.html">About me</a>
-                <a href="index.html">Home</a>
+                <img class="mypicture" src="images/IMG_8373.JPG" alt="Liliya">
+                <span class="menu">
+                    <a href="index.html">Home</a>
+                    <a href="aboutme.html">About me</a>
+                    <a href="portfolio.php">Portfolio</a>
+                    <a href="contacts.html">Contacts</a>
+                    <a class="login" href="adminPanel/loginform.php">. . .</a>
+                </span>
+                <div class="sandwich"></div>
             </nav>
-            <div class="works">
-                <h3>My projects:</h3>
+                <h3 class="aboutme">My projects:</h3>
+            <div class="portfolio">
                 <?php
-
-                   if (empty($projects)) {
+                    if (empty($projects)) {
                        echo 'There are no projects yet';
                    } else {
                        foreach ($projects as $project) {
@@ -42,6 +45,7 @@ $projects = $query->fetchAll();
             </div>
         </div>
         <div class="homecenter">
+            <img class="arrows" src="images/arrow-img.png" alt="Arrows">
             <div class="social contacts-social portfolio-social">
                 <a href="https://www.facebook.com/lilkalolkaN1"><i class="fa fa-facebook-square"></i></a>
                 <a href="https://github.com/Liliya-V"><i class="fa fa-github-square"></i></a>
