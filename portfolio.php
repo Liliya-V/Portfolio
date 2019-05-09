@@ -28,19 +28,18 @@ $projects = $query->fetchAll();
                 </span>
                 <div class="sandwich"></div>
             </nav>
-                <h3 class="aboutme">My projects:</h3>
             <div class="portfolio">
                 <?php
                     if (empty($projects)) {
-                       echo 'There are no projects yet';
-                   } else {
-                       foreach ($projects as $project) {
-                           echo '<div class="project">
+                    echo 'There are no projects yet';
+                } else {
+                    foreach ($projects as $project) {
+                        echo '<div class="project">
                                 <a href="' . $project['link'] . '"><img class="demo" src="'. $project['image'] . '" alt="lamp"></a>
                                 <h5>'.$project['title'].'</h5>
                              </div>';
-                       }
-                   }
+                    }
+                }
                 ?>
             </div>
         </div>
